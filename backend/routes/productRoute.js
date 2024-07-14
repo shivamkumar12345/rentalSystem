@@ -38,13 +38,16 @@ productRouter.post('/add-product',async(req,res)=>{
       console.log(user);
 
       if(user.email){
+        console.log(req.body,"product");
         const {productName, productPrice, productImage, productDesc}= req.body;
-        const response = new Product({ownerId:user.email,
+        const response = new Product({
+          ownerId:user.email,
           pricePerDay:productPrice,
           productName:productName,
           description:productDesc,
           image:productImage
-        });
+        }); 
+        console.log(response);
 
         await response.save();
 
@@ -53,6 +56,16 @@ productRouter.post('/add-product',async(req,res)=>{
   }catch(err){
     res.status(400).send('token expired')
   }
+})
+
+productRouter.get('/search-product',async(req,res)=>{
+      const {query} =req.query;
+
+      console.log(query);
+       const data = await Product.find({productName:{$regex: query}});
+       console.log(data);
+
+       res.status(200).send({msg:"searched successsfully",data})
 })
 
 module.exports = productRouter;

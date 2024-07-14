@@ -4,10 +4,10 @@ const db = require('./db.js')
 const User = require('./models/users.js')
 const Product =require('./models/products.js')
 const cors = require('cors');
-const userRouter = require('./routes/userRoutes.js');
+const userRouter = require('./routes/userRoute.js');
 
 const { verifyToken } = require('./middleware.js');
-const productRouter = require('./routes/productsRoute.js');
+const productRouter = require('./routes/productRoute.js');
 const rentRouter = require('./routes/rentRoute.js')
 app.use(cors())
 app.use(express.json());

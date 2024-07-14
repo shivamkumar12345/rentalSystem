@@ -1,0 +1,28 @@
+nav{
+    background-color: blue;
+    width: 100%;
+    padding: 10px 0;
+    color: white;
+
+    span{
+        font-weight: 600;
+        font-size: 32px;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: 12px;
+    }
+    li{
+        list-style: none;
+        float: right;
+        padding-top: 2px;
+        a{
+            margin-right:20px;
+            font-size: 24px;
+            font-weight: 400;
+        }
+        .profileImage {
+            float: right;
+            margin-right: 20px;
+        }
+    }
+    
+}

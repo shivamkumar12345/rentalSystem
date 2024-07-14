@@ -1,5 +1,4 @@
 const mongoose = require('mongoose')
-const userRouter = require('../routes/userRoutes')
 
 const productSchema = new mongoose.Schema({
       ownerId:{

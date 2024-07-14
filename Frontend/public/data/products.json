@@ -1,0 +1,86 @@
+{
+  "products": [
+    {
+      "productId": 1,
+      "ownerId": 2,
+      "category": "vehicle",
+      "name": "Toyota Camry",
+      "description": "2019 model, well-maintained, automatic transmission",
+      "pricePerDay": 1000,
+      "availabilityStatus": "available",
+      "image": "https://www.motortrend.com/uploads/sites/5/2020/07/2021-Toyota-Camry.jpg",
+      "specifications": {
+        "make": "Toyota",
+        "model": "Camry",
+        "year": 2019,
+        "color": "Silver",
+        "seats": 5
+      }
+    },
+    {
+      "productId": 2,
+      "ownerId": 2,
+      "category": "equipment",
+      "name": "Caterpillar Excavator",
+      "description": "Heavy-duty excavator for construction work",
+      "pricePerDay": 5000,
+      "availabilityStatus": "available",
+      "image": "https://res.cloudinary.com/dsfzcj5qk/image/upload/f_auto,c_limit,q_auto:low/q_auto/f_auto/v1689255731/blog/cat-excavator-sizes/cat-349f-excavator.jpg",
+      "specifications": {
+        "brand": "Caterpillar",
+        "model": "320D",
+        "power": "150 HP",
+        "weight": "21 tons"
+      }
+    },
+    {
+      "productId": 3,
+      "ownerId": 2,
+      "category": "electronics",
+      "name": "Canon DSLR Camera",
+      "description": "High-resolution camera with multiple lenses",
+      "pricePerDay": 500,
+      "availabilityStatus": "rented",
+      "image": "https://images-cdn.ubuy.co.in/634ebac59ca7fd76eb327ce3-canon-eos-4000d-dslr-camera-ef-s-18-55.jpg",
+      "specifications": {
+        "brand": "Canon",
+        "model": "EOS 5D Mark IV",
+        "resolution": "30.4 MP",
+        "lensIncluded": "Yes"
+      }
+    },
+    {
+      "productId": 4,
+      "ownerId": 2,
+      "category": "furniture",
+      "name": "Office Chair",
+      "description": "Ergonomic office chair with adjustable height",
+      "pricePerDay": 100,
+      "availabilityStatus": "available",
+      "image": "https://ik.imagekit.io/2xkwa8s1i/img/chairs/New/WSCHRSAFARHBNBBKBKBKML/6.jpg",
+      "specifications": {
+        "brand": "Herman Miller",
+        "model": "Aeron",
+        "color": "Black",
+        "material": "Mesh"
+      }
+    },
+    {
+      "productId": 5,
+      "ownerId": 2,
+      "category": "appliance",
+      "name": "Washing Machine",
+      "description": "High-efficiency front-load washing machine",
+      "pricePerDay": 200,
+      "availabilityStatus": "maintenance",
+      "image": "https://m.media-amazon.com/images/I/71H-pplDJ1L._AC_UF350,350_QL80_.jpg",
+      "specifications": {
+        "brand": "LG",
+        "model": "WM3500CW",
+        "capacity": "4.5 cu ft",
+        "energyRating": "ENERGY STAR"
+      }
+    }
+  ]
+}
+
