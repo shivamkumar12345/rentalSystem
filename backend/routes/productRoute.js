@@ -45,9 +45,10 @@ productRouter.post('/add-product',async(req,res)=>{
           pricePerDay:productPrice,
           productName:productName,
           description:productDesc,
-          image:productImage
+          image:productImage,
+          availabilityStatus:"available"
         }); 
-        console.log(response);
+        // console.log(response);
 
         await response.save();
 

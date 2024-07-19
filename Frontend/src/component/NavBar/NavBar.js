@@ -66,6 +66,7 @@ const NavBar = ({setFilterProduct}) => {
 
  const searchItem = async()=>{
     try{
+      
         const res = await fetch(`http://localhost:8080/search-product?query=${searchedValue}`);
         const {data} = await res.json();
         console.log(data);
