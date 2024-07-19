@@ -1,5 +1,9 @@
 const express = require('express')
+const dotenv = require('dotenv')
+dotenv.config()
+
 const app = express();
+
 const db = require('./db.js')
 const User = require('./models/users.js')
 const Product =require('./models/products.js')
@@ -19,6 +23,6 @@ app.use(rentRouter)
 
 
 
-app.listen(8080, ()=>{
-    console.log("server started at 8080 port");
+app.listen(process.env.PORT, ()=>{
+    console.log(`server started at ${process.env.PORT} port`);
 })

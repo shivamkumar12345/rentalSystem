@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb://127.0.0.1:27017/dbrental')
+mongoose.connect(process.env.DB_URI)
 .then(()=>{
     console.log("data base has been connected successfully");
 })
